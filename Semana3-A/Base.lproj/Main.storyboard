@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Semana3_A" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydB-x3-RtB">
+                                <rect key="frame" x="20" y="99" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Crear Carro"/>
+                                <connections>
+                                    <action selector="onTapCreateCarro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvH-Ww-GRN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b87-g5-7Xa">
+                                <rect key="frame" x="20" y="154" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Acelerar"/>
+                                <connections>
+                                    <action selector="onTapSpeedCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfq-Y4-HmP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Iu-vB-4SL">
+                                <rect key="frame" x="20" y="209" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Frenar"/>
+                                <connections>
+                                    <action selector="onTapBreakCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGX-0Y-R95"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Mascota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV9-tX-jFa">
+                                <rect key="frame" x="20" y="299" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBB-Jq-SV5">
+                                <rect key="frame" x="20" y="336" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Ubicación"/>
+                                <connections>
+                                    <action selector="onTapLocationPet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkp-EU-gNw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPB-XQ-sHz">
+                                <rect key="frame" x="20" y="391" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Darle comida"/>
+                                <connections>
+                                    <action selector="onTapFoodPet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvY-Le-xuS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Iu-vB-4SL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0sD-oq-huu"/>
+                            <constraint firstItem="uBB-Jq-SV5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1dc-nS-Fu7"/>
+                            <constraint firstItem="ydB-x3-RtB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="5cu-lz-bxG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ydB-x3-RtB" secondAttribute="trailing" constant="20" id="7Xu-6D-vuW"/>
+                            <constraint firstItem="8Iu-vB-4SL" firstAttribute="top" secondItem="b87-g5-7Xa" secondAttribute="bottom" constant="20" id="95k-wO-qf7"/>
+                            <constraint firstItem="b87-g5-7Xa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BZp-A4-pnB"/>
+                            <constraint firstItem="b87-g5-7Xa" firstAttribute="top" secondItem="ydB-x3-RtB" secondAttribute="bottom" constant="20" id="I4z-xo-LDI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uBB-Jq-SV5" secondAttribute="trailing" constant="20" id="Mbn-fl-VbM"/>
+                            <constraint firstItem="uBB-Jq-SV5" firstAttribute="top" secondItem="8Iu-vB-4SL" secondAttribute="bottom" constant="92" id="Mvd-Hh-3TT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Iu-vB-4SL" secondAttribute="trailing" constant="20" id="Qxa-Q6-XHx"/>
+                            <constraint firstItem="IV9-tX-jFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VLx-HM-i8W"/>
+                            <constraint firstItem="iPB-XQ-sHz" firstAttribute="top" secondItem="uBB-Jq-SV5" secondAttribute="bottom" constant="20" id="aTT-Qj-GgI"/>
+                            <constraint firstItem="iPB-XQ-sHz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aZ8-9y-KYV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b87-g5-7Xa" secondAttribute="trailing" constant="20" id="hOd-ku-uEj"/>
+                            <constraint firstItem="IV9-tX-jFa" firstAttribute="top" secondItem="8Iu-vB-4SL" secondAttribute="bottom" constant="55" id="kAT-9v-o8g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IV9-tX-jFa" secondAttribute="trailing" constant="262" id="mQk-jV-vHh"/>
+                            <constraint firstItem="ydB-x3-RtB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nsi-Lt-s18"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iPB-XQ-sHz" secondAttribute="trailing" constant="20" id="qON-J4-b7P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBreakCar" destination="8Iu-vB-4SL" id="0Nq-5a-1WG"/>
+                        <outlet property="btnCreateCarro" destination="ydB-x3-RtB" id="c7L-Eb-HWe"/>
+                        <outlet property="btnFoodPet" destination="iPB-XQ-sHz" id="yNT-lp-jqJ"/>
+                        <outlet property="btnLocationPet" destination="uBB-Jq-SV5" id="DIn-JE-f2U"/>
+                        <outlet property="btnSpeedCar" destination="b87-g5-7Xa" id="kJK-F1-Tvx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41.984732824427482" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
